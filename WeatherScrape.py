@@ -3,10 +3,11 @@ import pygame       # Used for GUI
 import sys          # Used to cleanly stop program
 import os           # Used to easily find file location
 
-# Accesses the file path that the program is stored in
-script_path = os.path.dirname(os.path.abspath(__file__))
+# Accesses the file path that the program is stored in and changes the directory to the location of the images
+script_path = os.path.dirname(os.path.abspath(__file__)) + "\\Images"
 os.chdir(script_path)
 
+# Initialized pygame
 pygame.init()
 
 # Gets size of users screen and sets constants for the height and width
